@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/*this is for icons*/
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-item {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a .icon {
+    margin-right: 5px;
+    width: 20px; 
+    height: 20px; 
+    background-size: contain;
+}
+
+.icon.home { background-image: url('home_icon.png'); }
+.icon.news { background-image: url('news_icon.png'); }
+.icon.world { background-image: url('world_icon.png'); }
+.icon.business { background-image: url('business_icon.png'); }
+.icon.politics { background-image: url('politics_icon.png'); }
+.icon.entertainment { background-image: url('entertainment_icon.png'); }
+.icon.sports { background-image: url('sports_icon.png'); }
+
+.nav-item:hover {
+    background-color: #ccc;
+}
+
+/*this is for search icon*/
+.search-icon {
+    margin-left: auto; 
+}
+
+.search-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.search-icon a .icon {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+.icon.search { background-image: url('images/search_icon.png.png'); }
+
+/*this is for the box below icons*/
+.breaking-news {
+    background-color: #f2f2f2; 
+    padding: 10px;
+}
+
+.news-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-text {
+    font-weight: bold;
+}
+
+.date-time {
+    color: #666; 
+}
+/*this is virat image*/
+.content {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 50px); /* Adjust height for header */
+}
+
+.virat-kohli {
+    position: relative;
+    width: 25%; /* Set width to 25% */
+    height: 70%; /* Set height to 70% */
+}
+ .ana-de-armas {
+    position: relative;
+    width: 25%; /* Set width to 25% */
+    height: 70%; /* Set height to 70% */
+    left:5px;
+
+ }
+
+.coffee{
+    position :relative;
+    left:10px;
+    width:25%;
+    height:35%;
+}
+.suicide{
+    position :relative;
+    width:25%;
+    height:35%;
+    left:-360px;
+    top:250px;
+}
+.virat-kohli img, .ana-de-armas img ,.coffee img,.suicide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+}
+
+.text-overlay h2 {
+    margin: 0;
+    font-size: 24px; /* Adjust font size as needed */
+    text-align:left;
+}
+.text-overlay h3 {
+    margin: 0;
+    font-size: 24px; /* Adjust font size as needed */
+    text-align:left;
+}
+/*for the latest and popular icons*/
+
+.iconbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.icon-item {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+
+.icon-item a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-item a .icon {
+    margin-right: 5px;
+    width: 20px; 
+    height: 20px; 
+    background-size: contain;
+}
+/*righmost things*/
+
+.boxes {
+    position: absolute;
+    left: 78%;
+    top: 65%;
+    transform: translateY(-50%);
+}
+
+.box {
+    width: 300px;
+    height: 120px; 
+    background-color: #ffffff;
+    border: 1px solid #000000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, serif;
+    margin-bottom: 10px; 
+}
+/*this is for the boxes to scroll and fetch from api*/
+/*
+.data-container {
+    position: absolute;
+    left: 76%;
+    width: 20%;
+    height: 50%;
+    overflow-y: scroll;
+    background-color: lightgrey;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.data-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.data-box img {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
